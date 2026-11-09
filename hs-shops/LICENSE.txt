@@ -1,0 +1,7 @@
+HS Store — HS Shops Modern
+
+Copyright (c) 2026 HS Store
+
+This resource is provided for use and modification by the server owner who obtained it.
+Keep the HS Store attribution in the resource files and documentation when redistributing.
+No warranty is provided. Test on a development server before production use.

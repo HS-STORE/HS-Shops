@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HS Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="shop" class="overlay" hidden aria-hidden="true">
+    <section class="store-window" role="dialog" aria-modal="true" aria-labelledby="store-title">
+      <header class="header">
+        <div class="brand-block">
+          <div class="brand-mark">HS</div>
+          <div><div class="brand-name">HS <span>STORE</span></div><div class="brand-caption">تجربة تسوق أسهل</div></div>
+        </div>
+        <button id="close" class="icon-button" aria-label="إغلاق المتجر" title="إغلاق">×</button>
+      </header>
+
+      <section class="welcome-card">
+        <div class="welcome-copy">
+          <span class="eyebrow"><i></i> أهلاً وسهلاً</span>
+          <h1 id="store-title">أهلاً فيك!</h1>
+          <p id="store-subtitle">اختار اللي تحتاجه، وطلبك يصلك فوراً.</p>
+        </div>
+        <div class="welcome-art" aria-hidden="true"><span class="art-ring"></span><span class="bag">🛍️</span><span class="spark spark-one">✦</span><span class="spark spark-two">✧</span></div>
+      </section>
+
+      <div class="toolbar">
+        <div class="section-heading"><span class="section-kicker">تسوق الآن</span><h2>منتجات المتجر</h2></div>
+        <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="ابحث عن منتج..." autocomplete="off"></label>
+      </div>
+      <nav id="categories" class="categories" aria-label="تصنيفات المنتجات"></nav>
+      <div id="products" class="products" aria-live="polite"></div>
+      <div id="empty" class="empty hidden">ما لقينا منتجات بهذا الاسم.</div>
+      <footer class="footer"><span class="status-dot"></span><span>دفع آمن من رصيدك داخل اللعبة</span><span class="footer-brand">HS STORE</span></footer>
+      <div id="toast" class="toast hidden" role="status"></div>
+    </section>
+    <audio id="welcome-audio" preload="auto"></audio>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
